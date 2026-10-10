@@ -160,6 +160,15 @@ fun LayoutUtama(modifier: Modifier = Modifier) {
                 warnaBg = colorResource(id = R.color.bg_zhilal),
                 warnaAlamat = colorResource(id = R.color.teks_putih)
             )
+            
+            // Card 4
+            ProfilCard(
+                nama = stringResource(id = R.string.nama_4),
+                telepon = stringResource(id = R.string.telp_standar),
+                alamat = stringResource(id = R.string.alamat_4),
+                warnaBg = colorResource(id = R.color.bg_ahmad),
+                warnaAlamat = colorResource(id = R.color.teks_kuning)
+            )
         }
     }
 }
