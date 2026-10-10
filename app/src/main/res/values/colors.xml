@@ -12,4 +12,8 @@
     <color name="bg_gibran">#7B4EAE</color>
     <color name="bg_zhilal">#0011F4</color>
     <color name="bg_ahmad">#006B13</color>
+
+    <color name="teks_putih">#FFFFFF</color>
+    <color name="teks_kuning">#FDBE00</color>
+    <color name="teks_cyan">#00D4FF</color>
 </resources>
