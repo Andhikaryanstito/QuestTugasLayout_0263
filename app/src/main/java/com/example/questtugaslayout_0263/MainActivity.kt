@@ -7,10 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.graphics.Color
 import com.example.questtugaslayout_0263.ui.theme.QuestTugasLayout_0263Theme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestTugasLayout_0263Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    
                 }
             }
         }
@@ -31,17 +27,12 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    QuestTugasLayout_0263Theme {
-        Greeting("Android")
-    }
+fun ProfilCard(
+    nama: String,
+    telepon: String,
+    alamat: String,
+    warnaBg: Color,
+    warnaAlamat: Color
+) {
+    // Fungsi khusus untuk Card agar tidak menduplikasi kode (Rule 2)
 }
