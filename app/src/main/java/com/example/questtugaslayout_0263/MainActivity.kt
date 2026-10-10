@@ -36,6 +36,7 @@ import com.example.questtugaslayout_0263.ui.theme.QuestTugasLayout_0263Theme
 
 
 class MainActivity : ComponentActivity() {
+    @Composable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -57,78 +58,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun ProfilCard(
-    nama: String,
-    telepon: String,
-    alamat: String,
-    warnaBg: Color,
-    warnaAlamat: Color
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = 8.dp, horizontal = 16.dp),
-        colors = CardDefaults.cardColors(containerColor = warnaBg),
-        shape = RoundedCornerShape(12.dp)
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            val logo = painterResource(id = R.drawable.logoumy)
-            Image(
-                painter = logo,
-                contentDescription = null,
-                modifier = Modifier.size(50.dp)
-            )
-            
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.weight(1f)
-            ) {
-                Text(
-                    text = nama,
-                    color = colorResource(id = R.color.teks_putih),
-                    fontFamily = FontFamily.Cursive,
-                    fontSize = 24.sp
-                )
-                if (telepon.isNotEmpty()) {
-                    Text(
-                        text = telepon,
-                        color = colorResource(id = R.color.teks_cyan),
-                        fontSize = 14.sp
-                    )
-                }
-                Text(
-                    text = alamat,
-                    color = warnaAlamat,
-                    fontSize = 14.sp
-                )
-            }
-
-            Image(
-                painter = logo,
-                contentDescription = null,
-                modifier = Modifier.size(50.dp)
-            )
-        }
-        
-        Text(
-            text = stringResource(id = R.string.teks_copyright),
-            fontSize = 12.sp,
-            modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .padding(bottom = 16.dp)
-        )
-    }
-}
-
-@Composable
-fun LayoutUtama(modifier: Modifier = Modifier) {
+(modifier: Modifier = Modifier) {
     Box(modifier = modifier.fillMaxSize()) {
         Column(
             modifier = Modifier.fillMaxSize(),
