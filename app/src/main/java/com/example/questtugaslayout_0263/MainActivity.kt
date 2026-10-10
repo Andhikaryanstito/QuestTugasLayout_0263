@@ -46,6 +46,14 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        
+        Text(
+            text = stringResource(id = R.string.teks_copyright),
+            fontSize = 12.sp,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 16.dp)
+        )
     }
 }
 
@@ -108,6 +116,14 @@ fun ProfilCard(
                 modifier = Modifier.size(50.dp)
             )
         }
+        
+        Text(
+            text = stringResource(id = R.string.teks_copyright),
+            fontSize = 12.sp,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 16.dp)
+        )
     }
 }
 
@@ -170,5 +186,13 @@ fun LayoutUtama(modifier: Modifier = Modifier) {
                 warnaAlamat = colorResource(id = R.color.teks_kuning)
             )
         }
+        
+        Text(
+            text = stringResource(id = R.string.teks_copyright),
+            fontSize = 12.sp,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 16.dp)
+        )
     }
 }
