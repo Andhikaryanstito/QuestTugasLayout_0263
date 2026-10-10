@@ -4,7 +4,17 @@
     <string name="judul_univ">Universitas Muhammadiyah Yogyakarta</string>
 
     <string name="nama_1">Bambang Sumantri</string>
+    <string name="alamat_1">Turi, Sleman</string>
+
     <string name="nama_2">Gibran Fathoni</string>
+    <string name="alamat_2">Kasihan, Bantul</string>
+
     <string name="nama_3">Zhilal Fadhilah</string>
+    <string name="alamat_3">Depok, Sleman</string>
+
     <string name="nama_4">Ahmad Alfian</string>
+    <string name="alamat_4">Gamping, Sleman</string>
+
+    <string name="telp_standar">085436874190</string>
+    <string name="teks_copyright">Copyright, 2026</string>
 </resources>
