@@ -82,7 +82,12 @@ fun ProfilCard(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.weight(1f)
             ) {
-                // Teks akan ditambahkan di sini
+                Text(
+                    text = nama,
+                    color = colorResource(id = R.color.teks_putih),
+                    fontFamily = FontFamily.Cursive,
+                    fontSize = 24.sp
+                )
             }
 
             Image(
