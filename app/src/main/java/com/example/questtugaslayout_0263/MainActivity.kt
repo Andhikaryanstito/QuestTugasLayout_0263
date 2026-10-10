@@ -88,6 +88,18 @@ fun ProfilCard(
                     fontFamily = FontFamily.Cursive,
                     fontSize = 24.sp
                 )
+                if (telepon.isNotEmpty()) {
+                    Text(
+                        text = telepon,
+                        color = colorResource(id = R.color.teks_cyan),
+                        fontSize = 14.sp
+                    )
+                }
+                Text(
+                    text = alamat,
+                    color = warnaAlamat,
+                    fontSize = 14.sp
+                )
             }
 
             Image(
