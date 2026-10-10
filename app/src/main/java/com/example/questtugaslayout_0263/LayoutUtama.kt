@@ -43,7 +43,7 @@ fun LayoutUtama(modifier: Modifier = Modifier) {
             // Card 1
             ProfilCard(
                 nama = stringResource(id = R.string.nama_1),
-                telepon = "",
+                telepon = stringResource(id = R.string.telp_andhika),
                 alamat = stringResource(id = R.string.alamat_1),
                 warnaBg = colorResource(id = R.color.bg_bambang),
                 warnaAlamat = colorResource(id = R.color.teks_kuning)
