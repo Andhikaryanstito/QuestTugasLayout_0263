@@ -120,6 +120,19 @@ fun LayoutUtama(modifier: Modifier = Modifier) {
         ) {
             Spacer(modifier = Modifier.height(32.dp))
             
+            Text(
+                text = stringResource(id = R.string.judul_prodi),
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
+            Text(
+                text = stringResource(id = R.string.judul_univ),
+                fontSize = 16.sp,
+                textAlign = TextAlign.Center
+            )
+            
+            Spacer(modifier = Modifier.height(24.dp))
         }
     }
 }
