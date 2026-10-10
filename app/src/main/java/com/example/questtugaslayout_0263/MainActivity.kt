@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestTugasLayout_0263Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    
+                    LayoutUtama(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -107,6 +107,19 @@ fun ProfilCard(
                 contentDescription = null,
                 modifier = Modifier.size(50.dp)
             )
+        }
+    }
+}
+
+@Composable
+fun LayoutUtama(modifier: Modifier = Modifier) {
+    Box(modifier = modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(modifier = Modifier.height(32.dp))
+            
         }
     }
 }
